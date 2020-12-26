@@ -1,0 +1,155 @@
+* {
+    font-family: 'Marcellus', serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+body {
+    background-color: #282828;
+    background: url(../img/background-image.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.Header {
+    text-align: center;
+}
+
+.Header button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 2rem;
+    color: #928e75;
+}
+
+.Separator {
+    padding-top: 1em;
+    padding-bottom: 3rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1, h2 {
+    text-shadow: 1px 1px 2px #000;
+}
+
+.Perks-Level {
+    position: absolute;
+    left: -80px;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.Perk-Line {
+    position: relative;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    min-height: 96px;
+}
+
+.Skill-Tree:nth-child(1) .Perk-Line {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.Skill-Tree:nth-child(1) h2, .Skill-Tree:nth-child(1) h2 i {
+    color: #FF6CA8;
+}
+
+.Skill-Tree:nth-child(2) {
+    border-left: 1px dashed #928e75;
+    border-right: 1px dashed #928e75;
+}
+
+.Skill-Tree:nth-child(2) h2, .Skill-Tree:nth-child(2) h2 i {
+    color: #C72C1C;
+}
+
+.Skill-Tree:nth-child(3) .Perk-Line {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.Skill-Tree:nth-child(3) h2, .Skill-Tree:nth-child(3) h2 i {
+    color: #F9B32F;
+}
+
+@media (max-width: 992px) {
+    .Skill-Tree {
+        padding: 1rem 2rem 5rem 2rem;
+    }
+
+    .Skill-Tree .Perk-Line {
+        border-radius: .5rem;
+    }
+
+    .Skill-Tree:nth-child(2) {
+        border: none;
+    }
+}
+
+.Level-1, .Level-1 > .Perks-Level {
+    background-color: rgba(57, 213, 255, 0.3);
+}
+
+.Level-2, .Level-2 > .Perks-Level {
+    background-color: rgba(206, 160, 228, 0.3);
+}
+
+.Level-3, .Level-3 > .Perks-Level {
+    background-color: rgba(255, 124, 184, 0.3);
+}
+
+.Level-4, .Level-4 > .Perks-Level {
+    background-color: rgba(78, 236, 145, 0.3);
+}
+
+.Level-5, .Level-5 > .Perks-Level {
+    background-color: rgba(2, 135, 208, 0.3);
+}
+
+.Level-6, .Level-6 > .Perks-Level {
+    background-color: rgba(249, 191, 59, 0.3);
+}
+
+.Perk-Btn img {
+    border: solid 4px rgba(236, 240, 241, 0.3);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.Perk-Btn.active img {
+    border-color: #3EDC81;
+}
+
+.Perk-Btn:hover img {
+    border-color: #fff;
+}
+
+/* modal */
+
+.modal-content {
+    background-color: #282828;
+    background: url(../img/background-image.jpg) no-repeat center center fixed;
+}
+
+.modal-header {
+    border-bottom: 1px solid #928e75;
+}
+
+.modal-title {
+    color: #928e75;
+}
+
+.modal-footer {
+    border-top: 1px solid #928e75;
+}
